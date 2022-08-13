@@ -1,0 +1,33 @@
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form-items {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: end;
+}
+.form-items label {
+  border-right: 1px solid black;
+  padding-right: 5px;
+}
+.form-items input {
+  margin-left: 10px;
+  outline: none;
+  padding: 5px 10px;
+  border: none;
+  width: 230px;
+  background: #f3f3f3;
+}
+.form-source {
+  background: none !important;
+  text-align: end;
+}
+.btn {
+  background: #6fa8dc;
+  outline: none;
+  border: none;
+  padding: 10px 40px;
+}

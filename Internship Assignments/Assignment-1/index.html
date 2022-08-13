@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Internship Assignment -1</title>
+  </head>
+  <body>
+    <div class="d-flex">
+      <form>
+        <div class="form-items">
+          <label>Select Source: </label>
+          <input
+            class="form-source"
+            value="Google Cloud Storage"
+            type="text"
+            name="source"
+          />
+          <br />
+        </div>
+        <div class="form-items">
+          <label>Provide a name for pipeline: </label>
+          <input
+            class="input-key"
+            type="text"
+            placeholder="e.g., cust_shop_energy_gkateway001"
+            name="name"
+            minlength="8"
+          /><br />
+        </div>
+        <div class="form-items">
+          <label>GCS project name: </label>
+          <input
+            class="input-key"
+            type="text"
+            placeholder="project-id"
+            name="project-name"
+            minlength="8"
+          /><br />
+        </div>
+        <div class="form-items">
+          <label>GCS bucket name: </label>
+          <input
+            class="input-key"
+            type="text"
+            placeholder="gs://your-bucket"
+            name="project-name"
+            minlength="8"
+          /><br />
+        </div>
+        <div class="form-items">
+          <label>Input Cloud Storage File(s): </label><br />
+          <input
+            type="text"
+            name="file-location"
+            placeholder=" GCS location of your files"
+          />
+          <!-- Example: gs://your-bucket/your-files/01.csv -->
+          <br />
+        </div>
+        <div class="form-items">
+          <label>GCS credentials: </label>
+          <input type="password" name="credentials" /><br />
+        </div>
+        <div class="form-items">
+          <label>Run Every: </label>
+          <input type="number" name="minutes" placeholder="(in minutes)" />
+          <br />
+        </div>
+
+        <button style="width: 41%" type="submit" class="btn">Create</button>
+        <button style="width: 58%" type="reset" class="btn">Cancel</button>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

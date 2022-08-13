@@ -1,0 +1,14 @@
+#tabledata {
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(103, 103, 103);
+}
+#tabledata thead {
+  text-transform: uppercase;
+}
+#tabledata td {
+  padding: 0px 10px;
+  border: none;
+  border-bottom: 1.5px solid rgb(219, 219, 219);
+}
