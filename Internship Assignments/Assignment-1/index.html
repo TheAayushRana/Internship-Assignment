@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Internship Assignment -1</title>
+    <title>Internship Assignment-1</title>
   </head>
   <body>
     <div class="d-flex">
@@ -18,62 +18,80 @@
             type="text"
             name="source"
           />
-          <br />
         </div>
         <div class="form-items">
           <label>Provide a name for pipeline: </label>
           <input
-            class="input-key"
+            id="pipeline-name"
             type="text"
             placeholder="e.g., cust_shop_energy_gkateway001"
-            name="name"
-            minlength="8"
+            name="pipeline-name"
+            minlength="5"
+            required
           /><br />
         </div>
+        <p id="error">Alert</p>
         <div class="form-items">
           <label>GCS project name: </label>
           <input
-            class="input-key"
+            id="project-name"
             type="text"
             placeholder="project-id"
             name="project-name"
-            minlength="8"
+            minlength="5"
+            required
           /><br />
+          <!-- <span>Do Not Use Special Characters and Minimum 5</span> -->
         </div>
         <div class="form-items">
           <label>GCS bucket name: </label>
           <input
+            id="bucket-name"
             class="input-key"
             type="text"
             placeholder="gs://your-bucket"
-            name="project-name"
-            minlength="8"
+            name="bucket-name"
+            minlength="5"
+            required
           /><br />
         </div>
         <div class="form-items">
           <label>Input Cloud Storage File(s): </label><br />
           <input
+            id="file-location"
             type="text"
             name="file-location"
             placeholder=" GCS location of your files"
+            minlength="5"
+            required
           />
-          <!-- Example: gs://your-bucket/your-files/01.csv -->
           <br />
         </div>
         <div class="form-items">
           <label>GCS credentials: </label>
-          <input type="password" name="credentials" /><br />
+          <input
+            id="password"
+            type="password"
+            name="credentials"
+            minlength="5"
+            required
+          /><br />
         </div>
         <div class="form-items">
           <label>Run Every: </label>
-          <input type="number" name="minutes" placeholder="(in minutes)" />
+          <input
+            type="number"
+            name="minutes"
+            placeholder="(in minutes)"
+            minlength="5"
+            required
+          />
           <br />
         </div>
-
         <button style="width: 41%" type="submit" class="btn">Create</button>
         <button style="width: 58%" type="reset" class="btn">Cancel</button>
       </form>
     </div>
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
