@@ -8,6 +8,7 @@
   text-transform: uppercase;
 }
 #tabledata td {
+  text-align: center;
   padding: 0px 10px;
   border: none;
   border-bottom: 1.5px solid rgb(219, 219, 219);
